@@ -37,7 +37,6 @@ body {
 }
 
 .quadr {
-    border: 1px solid;
     margin: 20px;
 }
 
@@ -64,9 +63,6 @@ body {
 }
 
 
-.shadow-pop-tr {
-    animation: shadow-pop-tr 5s cubic-bezier(.47, 0.000, .745, .715) both infinite;
-}
 
 .text-flicker-in-glow {
     animation: text-flicker-in-glow 4s linear both
