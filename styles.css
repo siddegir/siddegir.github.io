@@ -92,3 +92,12 @@ body {
         transform: translateX(0) translateY(0)
     }
 }
+
+
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        /* single column */
+    }
+}
