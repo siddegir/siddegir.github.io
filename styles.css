@@ -2,14 +2,14 @@
 @import url("animista.css");
 
 :root {
-    --background-color: #171614;
+    --background-color: #141517;
     --text-color: rgb(196, 196, 196);
     --border-color: rgb(63, 62, 62);
     --shadow-color: rgb(80, 80, 80);
 }
 
 * {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     color: var(--text-color);
     border-color: var(--border-color);
 }
@@ -19,6 +19,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background: url("bg.png");
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 .main {
     height: 100%;
@@ -38,18 +38,23 @@ body {
 
 .quadr {
     margin: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
 }
 
 .quadr-header {
     font-family: serif;
     margin: 20px;
-
     animation-iteration-count: infinite;
     animation-duration: 4.3s;
 }
 
 .quadr p {
     margin: 20px;
+}
+
+.quadr li {
+    list-style: image(url("favicon.png"));
 }
 
 .about-me,
@@ -62,13 +67,9 @@ body {
     line-height: 35px;
 }
 
-
-
 .text-flicker-in-glow {
     animation: text-flicker-in-glow 4s linear both
 }
-
-
 
 @media (max-width: 768px) {
     .main {
